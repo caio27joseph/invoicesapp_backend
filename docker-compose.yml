@@ -12,8 +12,7 @@ services:
       - ./generated:/usr/src/app/generated
     networks:
       - postgres
-  db:
-    container_name: invoice_postgres
+  invoice_postgres:
     image: postgres
     restart: unless-stopped
     volumes:
